@@ -1,0 +1,89 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  DETROIT  -  a bold, graphical CV for industry / technical roles   %%
+%%  Compile with pdflatex (run twice so the sidebar & links settle).  %%
+%%                                                                    %%
+%%  Structure:                                                        %%
+%%    \begin{cv}   ... sidebar content ...                            %%
+%%      \mainstart ... main-column content ...  \mainend             %%
+%%    \end{cv}                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt, a4paper]{main}
+
+\begin{document}
+\begin{cv}
+
+%======================  SIDEBAR (left column)  ======================%
+\profilepic{avatar.png}
+
+\sidesection{Contact}
+\cvlocation{Detroit, MI, USA}
+\cvphone{+1 313 555 0142}
+\cvemail{a.rivera@protonmail.com}
+\cvweb{alexrivera.eng}
+\cvlinkedin{alex-rivera}
+
+\sidesection{Core Skills}
+\skillgrid{95}{Lean / Six Sigma}{90}{CAD / CAM}%
+         {85}{PLC \& Automation}{80}{Project Mgmt}
+
+\sidesection{Tools \& Software}
+\tags{SolidWorks, CATIA, AutoCAD, Siemens NX, MATLAB, Minitab, SAP, Allen-Bradley PLC, Ignition SCADA}
+
+\sidesection{Languages}
+\level{English}{5}
+\level{Spanish}{4}
+\level{German}{2}
+
+\sidesection{Certifications}
+\sideentry{Six Sigma Black Belt}{ASQ -- 2021}
+\sideentry{PMP -- Project Management}{PMI -- 2020}
+\sideentry{Certified SolidWorks Pro}{Dassault -- 2018}
+
+%======================  MAIN (right column)  ======================%
+\mainstart
+
+\cvheader{Alex Rivera}{Manufacturing \& Process Engineer}
+
+Results-driven manufacturing engineer with 9+ years optimizing
+high-volume production lines in automotive and heavy industry. Proven
+record of cutting cycle times, scaling automation, and leading
+cross-functional teams to deliver measurable cost savings.
+
+\mainsection{Experience}
+
+\experience{Senior Manufacturing Engineer}{Apex Automotive Systems}{2020 -- Present}{Detroit, MI}{
+    \begin{itemize}
+        \item Redesigned the body-weld line layout, lifting throughput by
+              22\% and eliminating two bottleneck stations.
+        \item Deployed 14 collaborative robots across three shifts, cutting
+              manual handling incidents by 40\%.
+        \item Led a \$3.2M capital project on time and 8\% under budget.
+    \end{itemize}
+}
+
+\experience{Process Engineer}{Great Lakes Steel Works}{2016 -- 2020}{Cleveland, OH}{
+    \begin{itemize}
+        \item Applied Six Sigma DMAIC to reduce scrap rate from 6.1\% to
+              2.3\%, saving \$740K annually.
+        \item Standardized SPC dashboards adopted plant-wide across 5 lines.
+    \end{itemize}
+}
+
+\experience{Manufacturing Engineer}{Precision Tooling Inc.}{2014 -- 2016}{Toledo, OH}{
+    \begin{itemize}
+        \item Programmed and validated CNC processes for aerospace-grade
+              components, holding tolerances within $\pm$0.01 mm.
+    \end{itemize}
+}
+
+\mainsection{Key Achievements}
+\achievement{\faTrophy}{Won the company-wide ``Operational Excellence'' award (2022) for the weld-line automation program.}
+\achievement{\faLineChart}{Cumulative documented cost savings of \$1.9M across process-improvement initiatives.}
+\achievement{\faCogs}{Filed 2 patents for fixture designs now standard on the production floor.}
+
+\mainsection{Education}
+\education{B.Sc. Mechanical Engineering}{University of Michigan, Ann Arbor}{2010 -- 2014}
+
+\mainend
+\end{cv}
+\end{document}

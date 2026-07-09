@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  OSLO  -  a clean, single-column, TTS-friendly academic CV         %%
+%%  Compile with pdflatex (run twice so the PDF bookmarks settle).    %%
+%%                                                                    %%
+%%  Why this template is Text-To-Speech friendly:                     %%
+%%   * one column = one natural top-to-bottom reading order           %%
+%%   * contact icons carry spoken labels (Email, Phone, ...)          %%
+%%   * skills & languages use words, not unreadable progress bars     %%
+%%   * every part is real, selectable text (no photo, no image)       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt, a4paper]{main}
+
+\begin{document}
+
+% % % Your identity and contact details.
+\name{Dr. Jane A. Doe}
+\tagline{Computational Neuroscientist $\cdot$ Postdoctoral Researcher}
+\personalinfo{%
+    \location{Oslo, Norway}
+    \email{jane.doe@university.edu}
+    \phone{+47 123 45 678}
+    \homepage{janedoe.science}
+    \orcid{0000-0002-1825-0097}
+    \github{janedoe}
+}
+\makeheader
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Research Interests  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Interests}
+Neural computation and learning dynamics, biologically plausible deep
+learning, large-scale analysis of electrophysiological data, and the
+development of open, reproducible tools for computational neuroscience.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Education           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\cventry{Ph.D. in Computational Neuroscience}{2016 -- 2021}{University of Oslo, Norway}{
+    Thesis: \textit{Predictive coding in recurrent cortical circuits}.
+    Advisor: Prof.\ Erik Larsen. Awarded with distinction.
+}
+\cventry{M.Sc. in Physics}{2014 -- 2016}{ETH Z\"urich, Switzerland}{
+    Specialisation in complex systems and statistical mechanics.
+}
+\cventry{B.Sc. in Mathematics}{2011 -- 2014}{University of Cambridge, United Kingdom}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Appointments        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Academic Appointments}
+\cventry{Postdoctoral Researcher}{2021 -- Present}{Simula Research Laboratory, Oslo}{
+    \begin{itemize}
+        \item Lead a project on scalable inference methods for spiking neural
+              network models, funded by a Research Council of Norway grant.
+        \item Supervise two Ph.D.\ students and mentor three M.Sc.\ thesis projects.
+    \end{itemize}
+}
+\cventry{Visiting Researcher}{Summer 2019}{Allen Institute, Seattle, USA}{
+    \begin{itemize}
+        \item Developed analysis pipelines for large-scale two-photon imaging data,
+              now part of the institute's open toolkit.
+    \end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Publications        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Selected Publications}
+\cvsubsection{Journal Articles}
+\begin{publications}
+    \item \me{Doe, J.}, Larsen, E., \& Smith, R. (2023). Predictive coding
+          without backpropagation. \textit{Nature Neuroscience}, 26(4), 512--524.
+    \item Smith, R., \me{Doe, J.}, \& Kaur, P. (2022). Scalable inference for
+          spiking networks. \textit{PLOS Computational Biology}, 18(9), e1010422.
+\end{publications}
+\cvsubsection{Conference Papers}
+\begin{publications}
+    \item \me{Doe, J.} \& Larsen, E. (2021). Learning dynamics in recurrent
+          cortical models. In \textit{Advances in Neural Information Processing
+          Systems (NeurIPS)}.
+\end{publications}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Teaching            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching Experience}
+\cventry{Instructor -- Introduction to Computational Neuroscience}{2022, 2023}{University of Oslo}{
+    Designed and taught a 30-student graduate seminar; median evaluation 4.8/5.
+}
+\cventry{Teaching Assistant -- Machine Learning}{2018 -- 2020}{University of Oslo}{
+    Led weekly lab sessions and coursework for approximately 120 students.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Grants & Honors     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Grants, Awards \& Honors}
+\honor{2022}{Research Council of Norway Mobility Grant (NOK 1.2M).}
+\honor{2021}{Best Dissertation Award, Faculty of Mathematics and Natural Sciences.}
+\honor{2019}{NeurIPS Travel Award.}
+\honor{2016}{ETH Excellence Scholarship.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Talks               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Invited Talks \& Presentations}
+\honor{2023}{``Learning without backpropagation'', Cosyne, Lisbon (invited talk).}
+\honor{2022}{``Open tools for neural data'', FENS Forum, Paris (poster).}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Skills              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+\skillrow{Programming}{Python, Julia, C++, R, Bash}
+\skillrow{Scientific Computing}{PyTorch, JAX, NumPy/SciPy, MPI, CUDA}
+\skillrow{Tools \& Practice}{Git, Docker, \LaTeX, reproducible pipelines, HPC clusters}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Languages           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Languages}
+\lang{English}{Native}
+\lang{Norwegian}{Fluent (C1)}
+\lang{German}{Intermediate (B1)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Service             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Professional Service}
+\begin{itemize}
+    \item Reviewer: \textit{Nature Neuroscience}, \textit{NeurIPS}, \textit{PLOS Computational Biology}.
+    \item Co-organiser, Oslo Computational Neuroscience Seminar (2022 -- present).
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% References          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{References}
+\reference{Prof.\ Erik Larsen}{Department of Informatics, University of Oslo}{erik.larsen@university.edu}
+\reference{Dr.\ Priya Kaur}{Group Leader, Simula Research Laboratory}{priya.kaur@simula.no}
+
+\end{document}

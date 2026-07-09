@@ -33,6 +33,7 @@ Welcome to **Free LaTeX Templates for CV and Motivation Letter**! 🎉 This repo
 2. **Classic CV** – A traditional format with sections for experience, education, skills, and more.
 3. **Modern CV** – A sleek, two-column design for a more contemporary look.
 4. **Motivation Letter** – A formal letter template with structured sections to express your interest professionally.
+5. **Oslo – Academic CV** – A clean, single-column, accessibility-first template designed for researchers and academics (Research Interests, Publications, Teaching, Grants, Talks, Service, and more). Built to be as **Text-To-Speech (TTS) / screen-reader friendly** as possible: one linear reading order, contact icons carry spoken labels (`Email`, `Phone`, …) via `accsupp`, skills and languages are written as words instead of unreadable progress bars, PDF language/title metadata is set, and every element is real selectable text (no photo). Compiles with `pdflatex`.
 
 Each template is in its own folder with instructions, previews, and sample data to help you get started.
 
